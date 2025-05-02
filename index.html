@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Prices (Live)</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Price (THB)</th>
+          <th>Chart</th>
+          <th>Change</th>
+          <th>Market Cap</th>
+          <th>Volume</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="crypto-table">
+        <!-- Dynamic content here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal for chart -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <canvas id="priceChart"></canvas>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
